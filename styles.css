@@ -1,0 +1,185 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    background-color: #ffd1a375;
+    padding-top: 56px;
+}
+
+/* Cabeçalho */
+.navbar {
+    background-color: #9b5800 !important;
+    padding: 0.8rem 1.5rem;
+    box-shadow: 0 4px 6px #0000001a;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+    color: #ffffff;
+}
+
+/* Seção Hero */
+.hero {
+    background: url('fotos/foto2.JPG') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.116);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Seção Sobre Mim */
+#about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about img {
+    max-width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    background-color: #ff7b00;
+    border-radius: 0.5rem;
+}
+
+/* Seção Projetos */
+#projects {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .btn-primary,
+form .btn-primary {
+    background-color: #ff7b00;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+}
+
+/* Seção Contato */
+#contact {
+    padding: 60px 0;
+}
+
+form .form-group label {
+    font-weight: bold;
+}
+
+form .form-control {
+    border-radius: 0.5rem;
+    border-color: #ced4da;
+}
+
+/* Rodapé */
+footer {
+    background-color: #9b5800;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p.lead {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p.lead {
+        font-size: 1rem;
+    }
+}
+
+/* Animações */
+.nav-link, .btn, .card {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .btn:hover {
+    transform: translateY(-2px);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}

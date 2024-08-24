@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de [Seu Nome] - Analista de Dados especializado em SQL, Python e Analytics">
+    <meta name="keywords" content="analista de dados, SQL, Python, analytics, portfólio">
+    <title>Meu Portfólio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Meu Portfólio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <header id="home" class="hero">
+        <div class="container">
+            
+            <h1>Bem-vindo ao meu portfólio!</h1>
+            <p class="lead">Analista de Dados | Analytics | SQL | Python</p>
+
+        </div>
+    </header>
+
+    <!-- Sobre Mim -->
+    <section id="about" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <img src="fotos/foto1.JPG" alt="Foto do perfil" class="img-fluid rounded-circle" loading="lazy">
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <h2 class="mb-4">Sobre Mim</h2>
+                <p class="lead">Sou uma Estagiária de Dados apaixonada por tecnologia e criar coisas novas.</p>
+                <p>Com experiência em SQL, Python e ferramentas de visualização, estou sempre buscando novos desafios e oportunidades para aplicar minhas habilidades dentro e fora do mundo de dados. Uma verdadeira entusiasta em tecnologia!</p>
+                <a href="#contact" class="btn btn-primary mt-3">Vamos conversar!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Meus Projetos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="fotos/Design sem nome.jpg" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto FrontEnd</h5>
+                            <p class="card-text">Projeto criado com Angular que faz o trabalho de uma agenda, onde é possível adicionar, consultar, editar e deletar contatos, esse projeto consome a API do AgendaVirtual-BackEnd.</p>
+                            <a href="https://github.com/Maria-Alves031/AgendaVirtual-FrontEnd" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="fotos/Design sem nome (1).jpg" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto BackEnd</h5>
+                            <p class="card-text">Projeto criado em Java que faz o trabalho de uma agenda, onde é possível adicionar, consultar, editar e deletar contatos.</p>
+                            <a href="https://github.com/Maria-Alves031/AgendaVirtual-BackEnd" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="fotos/Design sem nome (2).jpg" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto Android</h5>
+                            <p class="card-text">Projeto criado em Kotlin que faz o trabalho de uma agenda, onde é possível adicionar, consultar, editar e deletar contatos.</p>
+                            <a href="https://github.com/Maria-Alves031/AgendaVirtual-Android" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="container py-5">
+        <h2>Contato</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu Nome">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Sua Mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mcalves019/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Maria-Alves031/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
